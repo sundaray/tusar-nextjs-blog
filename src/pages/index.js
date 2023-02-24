@@ -8,7 +8,7 @@ const homeVariants = {
   animate: {
     opacity: 1,
     y: 0,
-    transition: { staggerChildren: 0.05, eaee: "linear", duration: 1 },
+    transition: { staggerChildren: 0.05, eaee: "linear", duration: 0.5 },
   },
 };
 
@@ -19,20 +19,23 @@ export default function Home() {
         variants={homeVariants}
         initial="initial"
         animate="animate"
-        className="w-1/2 h-auto space-y-2 flex flex-col items-center"
+        className="w-full h-auto space-y-2 flex flex-col items-center"
       >
         <motion.div
           variants={homeVariants}
           className="w-24 h-24 bg-gray-100 rounded-full"
         ></motion.div>
-        <motion.h1 variants={homeVariants} className="text-4xl font-bold">
+        <motion.h1
+          variants={homeVariants}
+          className="text-3xl md:text-4xl font-bold"
+        >
           Tusar Palauri
         </motion.h1>
         <motion.p variants={homeVariants} className="text-gray-400">
           AUTOSAR Integration | Cybersecurity (HSM)
         </motion.p>
         <motion.div variants={homeVariants} className="space-x-2">
-          <Link href="">
+          <Link href="/blog">
             <button className="bg-orange-500 shadow-md shadow-orange-200 rounded px-2 py-0.5 text-white hover:bg-orange-400 transition-all">
               Blog
             </button>
