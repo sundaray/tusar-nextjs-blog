@@ -4,7 +4,7 @@ import { ArrowLeftIcon } from "@heroicons/react/24/solid";
 
 const Heading1 = ({ children, date }) => {
   return (
-    <div className="border-b-2 border-gray-100 space-y-6 py-16">
+    <div className="border-b-2 border-gray-200 space-y-6 py-16">
       <Link href="/blog" className="w-24 all-posts-link flex items-center">
         <ArrowLeftIcon className="arrow-left w-4 h-4 text-orange-500" />
         <p className="text-orange-500">All posts</p>

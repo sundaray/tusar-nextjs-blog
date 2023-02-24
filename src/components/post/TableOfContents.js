@@ -50,7 +50,7 @@ const TableOfContents = () => {
   return (
     <nav className="fixed hidden lg:block">
       <h1 className="font-bold mb-2 pl-2 text-gray-900">In this post</h1>
-      <ul className="border-l-2 border-gray-100 pl-2">
+      <ul className="border-l-2 border-gray-200 pl-2">
         {headings.map((heading) => (
           <li key={heading.id} style={{ marginLeft: `${heading.level - 2}em` }}>
             <a

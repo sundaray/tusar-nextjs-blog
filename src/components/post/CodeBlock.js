@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-import { dracula } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { oneLight } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import { FaRegCopy } from "react-icons/fa";
 
 const CodeBlock = ({ children, highlight = [], title, language }) => {
@@ -21,9 +21,9 @@ const CodeBlock = ({ children, highlight = [], title, language }) => {
       >
         <button>
           {copied ? (
-            <p className="text-gray-100 text-sm">copied</p>
+            <p className="text-blue-500 text-sm">copied</p>
           ) : (
-            <FaRegCopy className="hover:text-gray-100 transition-all" />
+            <FaRegCopy className="hover:text-blue-500 transition-all" />
           )}
         </button>
       </CopyToClipboard>
@@ -31,13 +31,13 @@ const CodeBlock = ({ children, highlight = [], title, language }) => {
       <SyntaxHighlighter
         className={`${
           language === "cpp"
-            ? "synatx-cpp rounded-xl"
+            ? "synatx-cpp shadow-md text-sm"
             : language === "json"
             ? "syntax-json"
             : ""
         }`}
         language={language}
-        style={dracula}
+        style={oneLight}
         showLineNumbers
         wrapLines
         lineProps={(lineNumber) => {
