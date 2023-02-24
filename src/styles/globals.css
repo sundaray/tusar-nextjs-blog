@@ -17,4 +17,37 @@
       color: #111827;
     }
   }
+
+  .linkedin {
+    background: transparent;
+    transition: all .5s;
+    position: relative;
+    overflow: hidden;
+}
+
+.linkedin::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background: #111827; /* onhover background color */
+    z-index: -1;
+    transform: translateX(-101%); 
+    transition: all .5s cubic-bezier(1, 0, 0, 1);
+}
+
+.linkedin:hover {
+    color: white;
+}
+
+.linkedin:hover .arrow{
+    color: white;
+}
+
+.linkedin:hover::after {
+    transform: translateX(0);
+}
   

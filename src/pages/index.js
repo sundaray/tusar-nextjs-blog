@@ -37,8 +37,8 @@ export default function Home() {
               Blog
             </button>
           </Link>
-          <button className="border border-gray-900 rounded px-2 py-0.5 text-gray-900">
-            <ArrowUpRightIcon className="inline-block w-4 h-4 text-gray-900" />{" "}
+          <button className="linkedin border border-gray-900 rounded px-2 py-0.5 text-gray-900">
+            <ArrowUpRightIcon className="arrow inline-block w-4 h-4 text-gray-900" />{" "}
             LinkedIn
           </button>
         </motion.div>
