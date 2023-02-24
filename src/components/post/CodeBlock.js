@@ -6,6 +6,7 @@ import { oneLight } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import { nightOwl } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import { zTouch } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import { coldDarkDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { synthwave84 } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import { FaRegCopy } from "react-icons/fa";
 
 const CodeBlock = ({ children, highlight = [], title, language }) => {
@@ -21,13 +22,13 @@ const CodeBlock = ({ children, highlight = [], title, language }) => {
       <CopyToClipboard
         onCopy={handleCopy}
         text={children}
-        className="absolute top-4 right-2 text-gray-400"
+        className="absolute top-4 right-4 text-gray-400"
       >
         <button>
           {copied ? (
-            <p className="text-gray-400 text-sm">copied</p>
+            <p className="text-gray-100 text-sm">copied</p>
           ) : (
-            <FaRegCopy className="hover:text-blue-500 transition-all" />
+            <FaRegCopy className="hover:text-gray-100 transition-all" />
           )}
         </button>
       </CopyToClipboard>
@@ -35,13 +36,13 @@ const CodeBlock = ({ children, highlight = [], title, language }) => {
       <SyntaxHighlighter
         className={`${
           language === "cpp"
-            ? "synatx-cpp"
+            ? "synatx-cpp rounded-xl"
             : language === "json"
             ? "syntax-json"
             : ""
         }`}
         language={language}
-        style={oneLight}
+        style={synthwave84}
         showLineNumbers
         wrapLines
         lineProps={(lineNumber) => {

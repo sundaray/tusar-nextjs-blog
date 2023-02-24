@@ -9,7 +9,7 @@ import { code } from "@/components/codesnippets/first-blog";
 const Home = () => {
   return (
     <PostLayout>
-      <Heading1>Introduction to C++</Heading1>
+      <Heading1 date="25th Feb, 2023">Introduction to C++</Heading1>
       <h2 className="heading-2" id="Creator">
         Creator
       </h2>
