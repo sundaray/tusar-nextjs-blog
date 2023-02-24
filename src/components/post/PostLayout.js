@@ -1,12 +1,16 @@
 import React from "react";
+import TableOfContents from "./TableOfContents";
 
-const PostLayout = ({ children }) => {
+const PostLayout = ({ children, toc = true }) => {
   return (
-    <>
-      <div className="post-layout">
-        <article className="article space-y-6">{children}</article>
-      </div>
-    </>
+    <div className="post-layout">
+      <article className="post space-y-6">{children}</article>
+      {toc && (
+        <aside className="toc">
+          <TableOfContents />
+        </aside>
+      )}
+    </div>
   );
 };
 

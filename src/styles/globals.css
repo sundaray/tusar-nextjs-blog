@@ -19,6 +19,12 @@
     }
   }
 
+  @layer components {
+    .heading-2 {
+      @apply text-2xl font-bold;
+    }
+  }
+
   .linkedin {
     background: transparent;
     transition: all .5s;
@@ -51,4 +57,25 @@
 .linkedin:hover::after {
     transform: translateX(0);
 }
-  
+
+.all-posts-link:hover .arrow-left {
+  transition: transform 0.2s ease-out;
+  transform: translate(-0.2rem);
+}
+
+.post-layout {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+}
+
+.post {
+grid-column: 2 / 8;
+grid-row: 1 / -1
+}
+
+.toc {
+  grid-column: 10 / -1;
+  grid-row: 4 / -1
+
+}

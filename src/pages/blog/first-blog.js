@@ -9,6 +9,9 @@ const Home = () => {
   return (
     <PostLayout>
       <Heading1>Introduction to C++</Heading1>
+      <h2 className="heading-2" id="Creator">
+        Creator
+      </h2>
       <p>
         C++ is a programming language created by{" "}
         <span className="font-bold">Bjarne Stroustrup</span> and his team at
@@ -31,7 +34,21 @@ const Home = () => {
         <span className="font-bold">Note:</span> Don’t worry if some words don’t
         make much sense right now. We’ll learn about them in a bit!
       </Note>
-      <Heading2>Hello World!</Heading2>
+      <h2 className="heading-2" id="Hello World!">
+        Hello World!
+      </h2>
+      <p>
+        Take a look at the hello.cpp file in the code editor that is placed in
+        the middle of the screen. It’s a C++ program!
+      </p>
+      <p>
+        C++ programs are stored in files which usually have the file extension
+        .cpp, which simply stands for “C Plus Plus”.
+      </p>
+      <p>
+        The code inside our C++ file is a classic first step all new programmers
+        take — they greet the world through the terminal!
+      </p>
       <p>
         The terminal is the black panel on the right. It should be blank right
         now. The code in the text editor will print text out onto the terminal.
@@ -42,6 +59,23 @@ const Home = () => {
         The code inside our C++ file is a classic first step all new programmers
         take — they greet the world through the terminal!
       </p>
+      <h2 className="heading-2" id="Output">
+        Output
+      </h2>
+      <p>High five! We just got your first program to run.</p>
+      <p>
+        C++, like most programming languages, runs line by line, from top to
+        bottom. Here is the structure of a C++ program:
+      </p>
+      <p>
+        In between the curly braces is what we are going to focus on for now.
+      </p>
+      <List>
+        <li>
+          <Highlight>std::cout</Highlight> is the “character output stream”. It
+          is pronounced “see-out”.
+        </li>
+      </List>
     </PostLayout>
   );
 };
