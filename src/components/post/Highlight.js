@@ -1,6 +1,6 @@
 import React from "react";
 
-const CodeInline = ({ children }) => {
+const Highlight = ({ children }) => {
   return (
     <span className="border rounded font-robotoMono text-sm bg-gray-50 text-gray-700 px-0.5">
       {children}
@@ -8,4 +8,4 @@ const CodeInline = ({ children }) => {
   );
 };
 
-export default CodeInline;
+export default Highlight;
