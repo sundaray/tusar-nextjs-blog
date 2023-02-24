@@ -12,7 +12,7 @@ const Heading1 = ({ children, date }) => {
       <h1 className="text-4xl md:text-6xl text-gray-900 font-bold mb-12">
         {children}{" "}
       </h1>
-      <p className="text-gray-400">{date}</p>
+      <p className="text-gray-400">Tusar Palauri | {date}</p>
     </div>
   );
 };

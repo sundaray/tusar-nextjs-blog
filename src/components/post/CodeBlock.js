@@ -1,12 +1,7 @@
 import React, { useState } from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-import { vscDarkPlus } from "react-syntax-highlighter/dist/cjs/styles/prism";
-import { oneLight } from "react-syntax-highlighter/dist/cjs/styles/prism";
-import { nightOwl } from "react-syntax-highlighter/dist/cjs/styles/prism";
-import { zTouch } from "react-syntax-highlighter/dist/cjs/styles/prism";
-import { coldDarkDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
-import { synthwave84 } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { dracula } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import { FaRegCopy } from "react-icons/fa";
 
 const CodeBlock = ({ children, highlight = [], title, language }) => {
@@ -42,7 +37,7 @@ const CodeBlock = ({ children, highlight = [], title, language }) => {
             : ""
         }`}
         language={language}
-        style={synthwave84}
+        style={dracula}
         showLineNumbers
         wrapLines
         lineProps={(lineNumber) => {
