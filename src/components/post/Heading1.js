@@ -9,7 +9,7 @@ const Heading1 = ({ children }) => {
         <ArrowLeftIcon className="arrow-left w-4 h-4 text-orange-500" />
         <p className="text-orange-500">All posts</p>
       </Link>
-      <h1 className="text-6xl text-gray-900 font-bold mb-12">{children} </h1>
+      <h1 className="text-4xl md:text-6xl text-gray-900 font-bold mb-12">{children} </h1>
     </div>
   );
 };

@@ -48,7 +48,7 @@ const TableOfContents = () => {
   );
 
   return (
-    <nav className="fixed">
+    <nav className="fixed hidden lg:block">
       <h1 className="font-bold mb-2 pl-2 text-gray-900">On this page</h1>
       <ul className="border-l-2 border-gray-100 pl-2">
         {headings.map((heading) => (

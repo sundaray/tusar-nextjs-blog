@@ -79,3 +79,10 @@ grid-row: 1 / -1
   grid-row: 2 / -1
 
 }
+
+@media (max-width: 1024px) { 
+  .post {
+    grid-column: 2 / 12;
+    grid-row: 1 / -1
+  }
+ }
