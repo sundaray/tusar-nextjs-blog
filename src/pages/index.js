@@ -22,13 +22,10 @@ export default function Home() {
         animate="animate"
         className="w-full h-auto space-y-2 flex flex-col items-center"
       >
-        <motion.div variants={homeVariants} className="portait shadow-xl">
-          {/* <Image
-            src={me}
-            alt="Portrait of Tusar Palauri"
-            className="object-cover w-20  "
-          /> */}
-        </motion.div>
+        <motion.div
+          variants={homeVariants}
+          className="portait shadow-xl"
+        ></motion.div>
         <motion.h1
           variants={homeVariants}
           className="text-3xl md:text-4xl font-bold"

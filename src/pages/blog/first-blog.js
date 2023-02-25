@@ -4,6 +4,7 @@ import List from "@/components/post/List";
 import Note from "@/components/post/Note";
 import Highlight from "@/components/post/Highlight";
 import CodeBlock from "@/components/post/CodeBlock";
+import Author from "@/components/post/Author";
 import { code } from "@/components/codesnippets/first-blog";
 
 const Home = () => {
@@ -78,6 +79,7 @@ const Home = () => {
           is pronounced “see-out”.
         </li>
       </List>
+      <Author />
     </PostLayout>
   );
 };
