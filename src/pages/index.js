@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
+import me from "../../public/tusar.jpg";
 
 const homeVariants = {
   initial: { opacity: 0, y: "1rem" },
@@ -21,10 +22,13 @@ export default function Home() {
         animate="animate"
         className="w-full h-auto space-y-2 flex flex-col items-center"
       >
-        <motion.div
-          variants={homeVariants}
-          className="w-24 h-24 bg-gray-100 rounded-full"
-        ></motion.div>
+        <motion.div variants={homeVariants} className="portait shadow-xl">
+          {/* <Image
+            src={me}
+            alt="Portrait of Tusar Palauri"
+            className="object-cover w-20  "
+          /> */}
+        </motion.div>
         <motion.h1
           variants={homeVariants}
           className="text-3xl md:text-4xl font-bold"
@@ -32,7 +36,7 @@ export default function Home() {
           Tusar Palauri
         </motion.h1>
         <motion.p variants={homeVariants} className="text-gray-400">
-          AUTOSAR Integration | Cybersecurity (HSM)
+          AUTOSAR | Embedded Systsems | C/C++
         </motion.p>
         <motion.div variants={homeVariants} className="space-x-2">
           <Link href="/blog">

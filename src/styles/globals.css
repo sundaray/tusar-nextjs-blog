@@ -14,8 +14,11 @@
       scroll-behavior: smooth;
     }
   
-    h1, h2, h3 {
+    h1 {
       color: #111827;
+    }
+    h2, h3 {
+      color: #1e3a8a;
     }
   }
 
@@ -23,6 +26,15 @@
     .heading-2 {
       @apply text-2xl font-bold;
     }
+  }
+
+  .portait {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  background: no-repeat url("../../public/tusar.jpg") ;
+  background-size: 90%;
+  background-position: center center;
   }
 
   .linkedin {

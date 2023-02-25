@@ -4,7 +4,7 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 import { oneLight } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import { FaRegCopy } from "react-icons/fa";
 
-const CodeBlock = ({ children, highlight = [], title, language }) => {
+const CodeBlock = ({ children, highlight = [], language }) => {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
