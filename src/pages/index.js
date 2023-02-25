@@ -41,10 +41,12 @@ export default function Home() {
               Blog
             </button>
           </Link>
-          <button className="linkedin border border-gray-900 rounded px-2 py-0.5 text-gray-900">
-            <ArrowUpRightIcon className="arrow inline-block w-4 h-4 text-gray-900" />{" "}
-            LinkedIn
-          </button>
+          <a href="https://www.linkedin.com/in/tusar-palauri/" target="_blank">
+            <button className="linkedin border border-gray-900 rounded px-2 py-0.5 text-gray-900">
+              <ArrowUpRightIcon className="arrow inline-block w-4 h-4 text-gray-900" />{" "}
+              LinkedIn
+            </button>
+          </a>
         </motion.div>
       </motion.div>
     </div>

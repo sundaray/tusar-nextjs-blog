@@ -10,6 +10,9 @@ const PostLayout = ({ children, toc = true }) => {
           <TableOfContents />
         </aside>
       )}
+      <footer className="footer bg-gray-900 text-gray-400 grid place-items-center">
+        &#169; {new Date().getFullYear()} - All rights reserved
+      </footer>
     </div>
   );
 };
