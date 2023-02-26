@@ -86,6 +86,16 @@
   transform: translate(-0.2rem);
 }
 
+.previous:hover .arrow-left {
+  transition: transform 0.2s ease-out;
+  transform: translate(-0.2rem);
+}
+
+.next:hover .arrow-right {
+  transition: transform 0.2s ease-out;
+  transform: translate(0.2rem);
+}
+
 .post-layout {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -94,7 +104,7 @@
 
 .post {
 grid-column: 2 / 8;
-grid-row: 1 / 16
+grid-row: 1 / 17
 }
 
 .toc {
@@ -102,11 +112,6 @@ grid-row: 1 / 16
   grid-row: 2 / -1
 }
 
-.footer {
-  grid-column: 1 / -1;
-  grid-row: 16 / 17
-
-}
 
 @media (max-width: 1024px) { 
   .post {

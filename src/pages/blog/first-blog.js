@@ -1,10 +1,11 @@
 import PostLayout from "../../components/post/PostLayout";
+import Pagination from "@/components/post/Pagination";
+import Author from "@/components/post/Author";
 import Heading1 from "@/components/post/Heading1";
 import List from "@/components/post/List";
 import Note from "@/components/post/Note";
 import Highlight from "@/components/post/Highlight";
 import CodeBlock from "@/components/post/CodeBlock";
-import Author from "@/components/post/Author";
 import { code } from "@/components/codesnippets/first-blog";
 
 const Home = () => {
@@ -79,6 +80,7 @@ const Home = () => {
           is pronounced “see-out”.
         </li>
       </List>
+      <Pagination />
       <Author />
     </PostLayout>
   );

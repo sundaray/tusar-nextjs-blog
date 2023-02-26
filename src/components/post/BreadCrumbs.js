@@ -27,7 +27,10 @@ const Breadcrumbs = () => {
   }
 
   return (
-    <nav aria-label="breadcrumbs" className="text-sm text-blue-500 py-1">
+    <nav
+      aria-label="breadcrumbs"
+      className="text-sm text-blue-500 py-1 bg-gray-50 pl-2"
+    >
       <ol className="flex space-x-2">
         <li className="hover:text-blue-600">
           <Link href="/">Home</Link>

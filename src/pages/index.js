@@ -1,8 +1,6 @@
 import Link from "next/link";
-import Image from "next/image";
 import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
-import me from "../../public/tusar.jpg";
 
 const homeVariants = {
   initial: { opacity: 0, y: "1rem" },

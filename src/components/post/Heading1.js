@@ -5,7 +5,7 @@ import Breadcrumbs from "./BreadCrumbs";
 
 const Heading1 = ({ children, date }) => {
   return (
-    <div className="border-b-2 border-gray-200 pt-12">
+    <div className="pt-12">
       <Link href="/blog" className="w-24 all-posts-link flex items-center">
         <ArrowLeftIcon className="arrow-left w-4 h-4 text-orange-500" />
         <p className="text-orange-500">All posts</p>
