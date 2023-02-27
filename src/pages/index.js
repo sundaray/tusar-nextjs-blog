@@ -3,7 +3,7 @@ import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 
 const homeVariants = {
-  initial: { opacity: 0, y: "1rem" },
+  initial: { opacity: 0, y: "0.5rem" },
   animate: {
     opacity: 1,
     y: 0,

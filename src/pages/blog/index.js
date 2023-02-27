@@ -59,7 +59,7 @@ const Index = () => {
             <div key={title}>
               <p className="text-gray-400 text-sm">{date}</p>
               <Link href={`/blog/${url}`}>
-                <h2 className="text-gray-700 text-2xl md:text-4xl font-medium">
+                <h2 className="text-gray-700 hover:text-gray-400 text-2xl md:text-4xl font-medium transition-all">
                   {title}
                 </h2>
               </Link>
