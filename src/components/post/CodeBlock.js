@@ -31,7 +31,7 @@ const CodeBlock = ({ children, highlight = [], language }) => {
       <SyntaxHighlighter
         className={`${
           language === "cpp"
-            ? "synatx-cpp shadow-md text-sm"
+            ? "synatx-cpp shadow text-sm"
             : language === "json"
             ? "syntax-json"
             : ""

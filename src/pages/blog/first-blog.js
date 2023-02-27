@@ -81,7 +81,7 @@ const Home = () => {
         </li>
       </List>
       <Pagination />
-      <Author />
+      {/* <Author /> */}
     </PostLayout>
   );
 };
