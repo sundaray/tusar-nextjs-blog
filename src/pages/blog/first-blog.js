@@ -73,7 +73,9 @@ const Home = () => {
       <p>
         In between the curly braces is what we are going to focus on for now.
       </p>
-      <CodeBlock language="cpp">{code}</CodeBlock>
+      <CodeBlock language="jsx" highlight={[7, 8, 9, 10, 16]}>
+        {code}
+      </CodeBlock>
       <List>
         <li>
           <Highlight>std::cout</Highlight> is the “character output stream”. It

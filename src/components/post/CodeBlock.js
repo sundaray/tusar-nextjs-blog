@@ -30,8 +30,8 @@ const CodeBlock = ({ children, highlight = [], language }) => {
 
       <SyntaxHighlighter
         className={`${
-          language === "cpp"
-            ? "synatx-cpp shadow text-sm"
+          language === "jsx"
+            ? "syntax-jsx text-sm"
             : language === "json"
             ? "syntax-json"
             : ""
@@ -43,7 +43,8 @@ const CodeBlock = ({ children, highlight = [], language }) => {
         lineProps={(lineNumber) => {
           let style = { display: "block" };
           if (highlight.includes(lineNumber)) {
-            style.backgroundColor = "#404040";
+            style.backgroundColor = "#f4f4f5";
+            style.borderLeft = "solid 3px #f97316";
           }
           return { style };
         }}
