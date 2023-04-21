@@ -4,7 +4,12 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 import { oneLight } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import { FaRegCopy } from "react-icons/fa";
 
-const CodeBlock = ({ children, highlight = [], language }) => {
+const CodeBlock = ({
+  children,
+  highlight = [],
+  language,
+  fileName = false,
+}) => {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
@@ -13,11 +18,14 @@ const CodeBlock = ({ children, highlight = [], language }) => {
   };
 
   return (
-    <div className="relative mb-6">
+    <div className="relative pt-2">
+      <div className="flex items-center pl-2 rounded-t absolute top-0 left-0 bg-zinc-100 w-full h-8 text-sm border-b">
+        {fileName}
+      </div>
       <CopyToClipboard
         onCopy={handleCopy}
         text={children}
-        className="absolute top-4 right-4 text-gray-400"
+        className="absolute top-2 right-4 text-gray-400"
       >
         <button>
           {copied ? (

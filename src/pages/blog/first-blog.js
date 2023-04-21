@@ -73,7 +73,7 @@ const Home = () => {
       <p>
         In between the curly braces is what we are going to focus on for now.
       </p>
-      <CodeBlock language="jsx" highlight={[7, 8, 9, 10, 16]}>
+      <CodeBlock language="jsx" highlight={[7, 8, 9, 10, 16]} fileName="App.js">
         {code}
       </CodeBlock>
       <List>

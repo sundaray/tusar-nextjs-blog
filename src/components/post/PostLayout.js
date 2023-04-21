@@ -13,8 +13,8 @@ const PostLayout = ({ children, toc = true }) => {
           </aside>
         )}
       </div>
-      <footer className=" bg-gray-900 text-gray-500 grid place-items-center py-12">
-        &#169; {new Date().getFullYear()} - All rights reserved
+      <footer className=" text-gray-500 grid place-items-center py-12 border-t-2">
+        &#169; {new Date().getFullYear()} &#8226; All rights reserved
       </footer>
     </>
   );
