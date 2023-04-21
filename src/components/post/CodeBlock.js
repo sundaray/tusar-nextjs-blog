@@ -19,7 +19,7 @@ const CodeBlock = ({
 
   return (
     <div className="relative pt-2">
-      <div className="flex items-center pl-2 rounded-t absolute -top-2 left-0 bg-zinc-100 w-full h-8 text-sm">
+      <div className="flex items-center pl-2 rounded-t absolute -top-2 left-0 bg-zinc-100 w-full h-8 text-sm font-medium">
         {fileName}
       </div>
       <CopyToClipboard
@@ -52,7 +52,7 @@ const CodeBlock = ({
           let style = { display: "block" };
           if (highlight.includes(lineNumber)) {
             style.backgroundColor = "#374151";
-            style.borderLeft = "solid 3px #f97316";
+            style.borderLeft = "solid 1px #f97316";
           }
           return { style };
         }}
