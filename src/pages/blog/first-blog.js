@@ -82,7 +82,7 @@ const Home = () => {
           is pronounced “see-out”.
         </li>
       </List>
-      <Pagination />
+      {/* <Pagination /> */}
       {/* <Author /> */}
     </PostLayout>
   );

@@ -31,7 +31,7 @@ const CodeBlock = ({ children, highlight = [], language }) => {
       <SyntaxHighlighter
         className={`${
           language === "jsx"
-            ? "syntax-jsx text-sm"
+            ? "text-sm"
             : language === "json"
             ? "syntax-json"
             : ""
