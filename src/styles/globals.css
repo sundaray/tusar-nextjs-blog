@@ -83,10 +83,10 @@
 
 .all-posts-link:hover .arrow-left {
   transition: transform 0.2s ease-out;
-  transform: translate(-0.2rem);
+  transform: translate(-0.1rem);
 }
 
-.previous:hover .arrow-left {
+/* .previous:hover .arrow-left {
   transition: transform 0.2s ease-out;
   transform: translate(-0.2rem);
 }
@@ -94,7 +94,7 @@
 .next:hover .arrow-right {
   transition: transform 0.2s ease-out;
   transform: translate(0.2rem);
-}
+} */
 
 .post-layout {
   display: grid;

@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-import { zTouch } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { nightOwl } from "react-syntax-highlighter/dist/cjs/styles/prism";
+// import { zTouch } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import { FaRegCopy } from "react-icons/fa";
 
 const CodeBlock = ({
@@ -45,13 +46,13 @@ const CodeBlock = ({
             : ""
         }`}
         language={language}
-        style={zTouch}
+        style={nightOwl}
         showLineNumbers
         wrapLines
         lineProps={(lineNumber) => {
           let style = { display: "block" };
           if (highlight.includes(lineNumber)) {
-            style.backgroundColor = "#172554";
+            style.backgroundColor = "#082f49";
             style.borderLeft = "solid 1px #f97316";
           }
           return { style };
