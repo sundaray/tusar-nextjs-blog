@@ -13,12 +13,12 @@ const Heading1 = ({ children, date }) => {
         <ArrowLeftIcon className="arrow-left w-4 h-4 text-orange-500" />
         <p className="text-orange-500">All posts</p>
       </Link>
-      <div className="bg-zinc-50 py-6 px-2 border-b-2">
+      <div className="bg-zinc-50 px-2 border-b-2 space-y-4 py-6">
         <Breadcrumbs />
-        <h1 className="text-4xl md:text-6xl text-gray-900 font-bold pb-4">
+        <h1 className="text-4xl md:text-6xl text-gray-900 font-bold">
           {children}{" "}
         </h1>
-        <p className="text-gray-400 mb-6">Hemanta Sundaray &#8226; {date}</p>
+        <p className="text-gray-400">Hemanta Sundaray &#8226; {date}</p>
       </div>
     </div>
   );

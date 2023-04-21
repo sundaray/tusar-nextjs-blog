@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-import { oneLight } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { dracula } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import { FaRegCopy } from "react-icons/fa";
 
 const CodeBlock = ({
@@ -19,13 +19,13 @@ const CodeBlock = ({
 
   return (
     <div className="relative pt-2">
-      <div className="flex items-center pl-2 rounded-t absolute top-0 left-0 bg-zinc-100 w-full h-8 text-sm border-b">
+      <div className="flex items-center pl-2 rounded-t absolute -top-2 left-0 bg-zinc-100 w-full h-8 text-sm">
         {fileName}
       </div>
       <CopyToClipboard
         onCopy={handleCopy}
         text={children}
-        className="absolute top-2 right-4 text-gray-400"
+        className="absolute top-0 right-4 text-gray-400"
       >
         <button>
           {copied ? (
@@ -45,13 +45,13 @@ const CodeBlock = ({
             : ""
         }`}
         language={language}
-        style={oneLight}
+        style={dracula}
         showLineNumbers
         wrapLines
         lineProps={(lineNumber) => {
           let style = { display: "block" };
           if (highlight.includes(lineNumber)) {
-            style.backgroundColor = "#f4f4f5";
+            style.backgroundColor = "#374151";
             style.borderLeft = "solid 3px #f97316";
           }
           return { style };
