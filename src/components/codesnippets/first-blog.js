@@ -1,5 +1,8 @@
-export const code = `
-const greet =  (designation: string) => {
-  return \`Hello \${designation}\`
-}
-`;
+export const code = `const Introduction = () => {
+  return (
+    <Layout>
+      <h1>Introduction</h1>
+      <p>What is Express.js?</p>
+    </Layout>
+  )
+}`;
