@@ -52,7 +52,7 @@ const CodeBlock = ({
         lineProps={(lineNumber) => {
           let style = { display: "block" };
           if (highlight.includes(lineNumber)) {
-            style.backgroundColor = "#082f49";
+            style.backgroundColor = "#02213B";
             style.borderLeft = "solid 1px #f97316";
           }
           return { style };
