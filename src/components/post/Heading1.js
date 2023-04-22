@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowLeftIcon } from "@heroicons/react/24/solid";
 import Breadcrumbs from "./BreadCrumbs";
 
-const Heading1 = ({ children, date }) => {
+const Heading1 = ({ children, publishedDate, updatedDate }) => {
   return (
     <div className="mt-12 ">
       <Link
@@ -18,7 +18,10 @@ const Heading1 = ({ children, date }) => {
         <h1 className="text-4xl md:text-6xl text-gray-900 font-bold">
           {children}{" "}
         </h1>
-        <p className="text-gray-400">Hemanta Sundaray &#8226; {date}</p>
+        <p className="text-gray-400">
+          Hemanta Sundaray &#8226; Published {publishedDate} &#8226; Updated{" "}
+          {updatedDate}
+        </p>
       </div>
     </div>
   );

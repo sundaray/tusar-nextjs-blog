@@ -1,6 +1,5 @@
+import Head from "next/head";
 import PostLayout from "../../components/post/PostLayout";
-import Pagination from "@/components/post/Pagination";
-import Author from "@/components/post/Author";
 import Heading1 from "@/components/post/Heading1";
 import List from "@/components/post/List";
 import Note from "@/components/post/Note";
@@ -11,7 +10,13 @@ import { code } from "@/components/codesnippets/first-blog";
 const Home = () => {
   return (
     <PostLayout>
-      <Heading1 date="25th Feb, 2023">Introduction to C++</Heading1>
+      <Head>
+        <title>Learn C++ | Hemanta Sundaray</title>
+        <meta name="description" content="" key="desc" />
+      </Head>
+      <Heading1 publishedDate="25th Feb, 2023" updatedDate="25th Feb, 2023">
+        Introduction to C++
+      </Heading1>
       <h2 className="heading-2" id="Creator">
         Creator
       </h2>
@@ -34,8 +39,8 @@ const Home = () => {
         <li>It forces you to think in new and creative ways.</li>
       </List>
       <Note>
-        <span className="font-bold">Note:</span> Don’t worry if some words don’t
-        make much sense right now. We’ll learn about them in a bit!
+        Don’t worry if some words don’t make much sense right now. We’ll learn
+        about them in a bit!
       </Note>
       <h2 className="heading-2" id="Hello World!">
         Hello World!
@@ -82,8 +87,6 @@ const Home = () => {
           is pronounced “see-out”.
         </li>
       </List>
-      {/* <Pagination /> */}
-      {/* <Author /> */}
     </PostLayout>
   );
 };
