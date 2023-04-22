@@ -13,14 +13,14 @@ const Heading1 = ({ children, publishedDate, updatedDate }) => {
         <ArrowLeftIcon className="arrow-left w-4 h-4 text-orange-500" />
         <p className="text-orange-500">All posts</p>
       </Link>
-      <div className="px-2 border-b-2 space-y-4 pb-6 pt-12">
+      <div className="px-2 border-b-2 pb-6 pt-12">
         <Breadcrumbs />
-        <h1 className="text-4xl md:text-6xl text-gray-900 font-bold">
+        <h1 className="text-4xl md:text-6xl text-gray-900 font-bold mb-4">
           {children}{" "}
         </h1>
+        <p className="text-gray-400">by Hemanta Sundaray</p>
         <p className="text-gray-400">
-          Hemanta Sundaray &#8226; Published {publishedDate} &#8226; Updated{" "}
-          {updatedDate}
+          Published {publishedDate} | Updated {updatedDate}
         </p>
       </div>
     </div>
