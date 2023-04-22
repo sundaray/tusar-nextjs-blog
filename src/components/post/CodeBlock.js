@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { nightOwl } from "react-syntax-highlighter/dist/cjs/styles/prism";
-// import { zTouch } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import { FaRegCopy } from "react-icons/fa";
+import { CheckIcon } from "@heroicons/react/24/solid";
 
 const CodeBlock = ({
   children,
@@ -30,7 +30,10 @@ const CodeBlock = ({
       >
         <button>
           {copied ? (
-            <p className="text-blue-500 text-sm">copied</p>
+            <div className="flex items-center">
+              <CheckIcon className="w-4 h-4, text-green-500" />
+              <p className="text-green-500 text-sm">copied</p>
+            </div>
           ) : (
             <FaRegCopy className="hover:text-blue-500 transition-all" />
           )}
@@ -40,7 +43,7 @@ const CodeBlock = ({
       <SyntaxHighlighter
         className={`${
           language === "jsx"
-            ? "text-sm"
+            ? "lang-jsx text-sm"
             : language === "json"
             ? "syntax-json"
             : ""

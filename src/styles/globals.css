@@ -125,3 +125,39 @@ grid-row: 1 / 17
   }
 
   
+  .lang-jsx::before {
+    content: "JSX";
+    background: #40e0d0;
+    color: black;
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    width: 3rem;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.1rem;
+    letter-spacing: 0.1rem;
+    border-bottom-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+  }
+
+  .lang-js::before {
+    content: "JS";
+    background: #0bda51;
+    color: black;
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    width: 3rem;
+    text-align: center;
+    font-family: var(--inter);
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0.1rem;
+    letter-spacing: 0.1rem;
+    border-bottom-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+  }
+  
+  
